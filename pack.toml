@@ -1,0 +1,13 @@
+name = "Mediumcore"
+author = "purplepentagons"
+version = "0.0.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "8e905f366890d30cab5c381d58432559e33ef2bd93d6bc20f1b80a2395cce66c"
+
+[versions]
+fabric = "0.19.2"
+minecraft = "1.20.1"

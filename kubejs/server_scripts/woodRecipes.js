@@ -1,0 +1,213 @@
+ServerEvents.recipes(event => {
+     const planksWoodList = [
+        "oak",
+        "spruce",
+        "birch",
+        "jungle",
+        "acacia",
+        "cherry",
+        "dark_oak",
+        "mangrove",
+        "bamboo",
+        "crimson",
+        "warped"
+    ]
+
+    function shapedSawRecipe(item, pattern, key) {
+        let sawKey = key;
+        sawKey.X = "#notreepunching:saws";
+
+        event.remove({
+            output: item
+        });
+        event.shaped(item, pattern, sawKey).damageIngredient("#notreepunching:saws");
+    }
+
+    planksWoodList.forEach((wood) => {
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_stairs`,4),
+            [
+                "P X",
+                "PP ",
+                "PPP"
+            ],
+            {
+                P: `minecraft:${wood}_planks`
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_slab`,6),
+            [
+                "PPP",
+                " X ",
+            ],
+            {
+                P: `minecraft:${wood}_planks`
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_shelf`,4),
+            [
+                "PPP",
+                " X ",
+                "PPP"
+            ],
+            {
+                P: `minecraft:${wood}_planks`
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_door`,3),
+            [
+                "PP ",
+                "PPI",
+                "PPX"
+            ],
+            {
+                P: `minecraft:${wood}_planks`,
+                I: "#c:nuggets"
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_trapdoor`,2),
+            [
+                "PPP",
+                "PPP",
+                " X "
+            ],
+            {
+                P: `minecraft:${wood}_planks`
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_fence`,3),
+            [
+                "PSP",
+                "PSP",
+                " X "
+            ],
+            {
+                P: `minecraft:${wood}_planks`,
+                S: "minecraft:stick"
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_fence_gate`,1),
+            [
+                "SPS",
+                "SPS",
+                " X "
+            ],
+            {
+                P: `minecraft:${wood}_planks`,
+                S: "minecraft:stick"
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_sign`,3),
+            [
+                "PPP",
+                "PPP",
+                "XS "
+            ],
+            {
+                P: `minecraft:${wood}_planks`,
+                S: "minecraft:stick"
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_hanging_sign`,6),
+            [
+                "CXC",
+                "PPP",
+                "PPP"
+            ],
+            {
+                P: `minecraft:${wood}_planks`,
+                C: "#c:chains"
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_pressure_plate`,1),
+            [
+                "PP",
+                "X "
+            ],
+            {
+                P: `minecraft:${wood}_planks`
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_pressure_plate`,1),
+            [
+                "PP",
+                "X "
+            ],
+            {
+                P: `minecraft:${wood}_planks`
+            }
+        )
+
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_button`,1),
+            [
+                "P ",
+                " X"
+            ],
+            {
+                P: `minecraft:${wood}_planks`
+            }
+        )
+    })
+
+    // boats
+    planksWoodList
+    .filter((p) => (p != "bamboo") && (p != "warped") && (p != "crimson"))
+    .forEach((wood) => {
+        shapedSawRecipe(
+            Item.of(`minecraft:${wood}_boat`,1),
+            [
+                "PXP",
+                "PPP"
+            ],
+            {
+                P: `minecraft:${wood}_planks`
+            }
+        )
+    })
+
+    // it breaks the naming convention for some reason
+    shapedSawRecipe(
+        "minecraft:bamboo_raft",
+        [
+            "PXP",
+            "PPP"
+        ],
+        {
+            P: `minecraft:bamboo_planks`
+        }
+    )
+
+    shapedSawRecipe(
+        "minecraft:chest",
+        [
+            "PPP",
+            "IXI",
+            "PPP"
+        ],
+        {
+            P: "#minecraft:planks",
+            I: "minecraft:iron_ingot"
+        }
+    )
+})
