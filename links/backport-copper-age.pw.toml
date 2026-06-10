@@ -1,5 +1,5 @@
 name = "Copper Age Backport"
-filename = "copperagebackport-fabric-1.20.1-0.1.4.jar"
+filename = "../mods/copperagebackport-fabric-1.20.1-0.1.4.jar"
 side = "both"
 
 [download]

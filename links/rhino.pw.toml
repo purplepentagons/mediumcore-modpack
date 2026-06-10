@@ -1,5 +1,5 @@
 name = "Rhino"
-filename = "rhino-fabric-2001.2.3-build.10.jar"
+filename = "../mods/rhino-fabric-2001.2.3-build.10.jar"
 side = "both"
 
 [download]

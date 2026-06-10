@@ -1,5 +1,5 @@
 name = "Difficulty Lock"
-filename = "difficultylock-1.20.1-4.7.jar"
+filename = "../mods/difficultylock-1.20.1-4.7.jar"
 side = "both"
 
 [download]

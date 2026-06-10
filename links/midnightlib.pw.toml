@@ -1,5 +1,5 @@
 name = "MidnightLib"
-filename = "midnightlib-fabric-1.9.3+1.20.1.jar"
+filename = "../mods/midnightlib-fabric-1.9.3+1.20.1.jar"
 side = "both"
 
 [download]

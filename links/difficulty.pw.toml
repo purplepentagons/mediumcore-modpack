@@ -1,5 +1,5 @@
 name = "SIHYWTCAMD"
-filename = "sihywtcamd-1.10.5+1.20.1.jar"
+filename = "../mods/sihywtcamd-1.10.5+1.20.1.jar"
 side = "both"
 
 [download]

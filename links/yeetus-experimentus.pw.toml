@@ -1,5 +1,5 @@
 name = "Yeetus Experimentus"
-filename = "YeetusExperimentus-Fabric-2.3.0-build.4+mc1.20.1.jar"
+filename = "../mods/YeetusExperimentus-Fabric-2.3.0-build.4+mc1.20.1.jar"
 side = "client"
 
 [download]

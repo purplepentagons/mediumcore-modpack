@@ -1,5 +1,5 @@
 name = "Presence Footsteps"
-filename = "PresenceFootsteps-1.10.1+1.20.1.jar"
+filename = "../mods/PresenceFootsteps-1.10.1+1.20.1.jar"
 side = "client"
 
 [download]

@@ -1,5 +1,5 @@
 name = "YUNG's Extras"
-filename = "YungsExtras-1.20-Fabric-4.0.3.jar"
+filename = "../mods/YungsExtras-1.20-Fabric-4.0.3.jar"
 side = "both"
 
 [download]

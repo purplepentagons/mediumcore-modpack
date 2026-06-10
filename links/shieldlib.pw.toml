@@ -1,5 +1,5 @@
 name = "Shield Lib"
-filename = "FabricShieldLib-1.7.2-1.20.1.jar"
+filename = "../mods/FabricShieldLib-1.7.2-1.20.1.jar"
 side = "both"
 
 [download]

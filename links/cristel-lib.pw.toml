@@ -1,5 +1,5 @@
 name = "Cristel Lib"
-filename = "cristellib-1.1.5-fabric.jar"
+filename = "../mods/cristellib-1.1.5-fabric.jar"
 side = "both"
 
 [download]

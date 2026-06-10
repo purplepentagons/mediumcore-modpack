@@ -1,5 +1,5 @@
 name = "Roughly Enough Items (REI)"
-filename = "RoughlyEnoughItems-12.1.785-fabric.jar"
+filename = "../mods/RoughlyEnoughItems-12.1.785-fabric.jar"
 side = "both"
 
 [download]

@@ -1,5 +1,5 @@
 name = "FerriteCore"
-filename = "ferritecore-6.0.1-fabric.jar"
+filename = "../mods/ferritecore-6.0.1-fabric.jar"
 side = "both"
 
 [download]

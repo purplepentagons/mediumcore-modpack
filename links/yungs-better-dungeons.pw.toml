@@ -1,5 +1,5 @@
 name = "YUNG's Better Dungeons"
-filename = "YungsBetterDungeons-1.20-Fabric-4.0.4.jar"
+filename = "../mods/YungsBetterDungeons-1.20-Fabric-4.0.4.jar"
 side = "both"
 
 [download]

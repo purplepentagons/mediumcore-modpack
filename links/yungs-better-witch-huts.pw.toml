@@ -1,5 +1,5 @@
 name = "YUNG's Better Witch Huts"
-filename = "YungsBetterWitchHuts-1.20-Fabric-3.0.3.jar"
+filename = "../mods/YungsBetterWitchHuts-1.20-Fabric-3.0.3.jar"
 side = "both"
 
 [download]

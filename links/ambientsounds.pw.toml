@@ -1,5 +1,5 @@
 name = "AmbientSounds"
-filename = "AmbientSounds_FABRIC_v6.3.8_mc1.20.1.jar"
+filename = "../mods/AmbientSounds_FABRIC_v6.3.8_mc1.20.1.jar"
 side = "client"
 
 [download]

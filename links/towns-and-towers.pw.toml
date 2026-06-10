@@ -1,5 +1,5 @@
 name = "Towns and Towers"
-filename = "Towns-and-Towers-1.12-Fabric+Forge.jar"
+filename = "../mods/Towns-and-Towers-1.12-Fabric+Forge.jar"
 side = "both"
 
 [download]

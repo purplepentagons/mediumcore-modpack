@@ -1,5 +1,5 @@
 name = "Lithium"
-filename = "lithium-fabric-mc1.20.1-0.11.4.jar"
+filename = "../mods/lithium-fabric-mc1.20.1-0.11.4.jar"
 side = "both"
 
 [download]

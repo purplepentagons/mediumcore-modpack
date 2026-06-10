@@ -1,5 +1,5 @@
 name = "No More Sleeping"
-filename = "AntiSleepMod-1.0-SNAPSHOT.jar"
+filename = "../mods/AntiSleepMod-1.0-SNAPSHOT.jar"
 side = "both"
 
 [download]

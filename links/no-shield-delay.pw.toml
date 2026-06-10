@@ -1,5 +1,5 @@
 name = "No Shield Delay"
-filename = "no-shield-delay-1.0.1.jar"
+filename = "../mods/no-shield-delay-1.0.1.jar"
 side = "both"
 
 [download]

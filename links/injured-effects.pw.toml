@@ -1,5 +1,5 @@
 name = "Injured Effects"
-filename = "injured-effects-1.4.1.jar"
+filename = "../mods/injured-effects-1.4.1.jar"
 side = "both"
 
 [download]

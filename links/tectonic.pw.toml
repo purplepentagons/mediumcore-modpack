@@ -1,5 +1,5 @@
 name = "Tectonic"
-filename = "tectonic-3.0.17-fabric-1.20.1.jar"
+filename = "../mods/tectonic-3.0.17-fabric-1.20.1.jar"
 side = "both"
 
 [download]

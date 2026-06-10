@@ -1,5 +1,5 @@
 name = "Anti-Smooth"
-filename = "antismooth-fabric-1.20.1-1.0.0.jar"
+filename = "../mods/antismooth-fabric-1.20.1-1.0.0.jar"
 side = "both"
 
 [download]

@@ -1,5 +1,5 @@
 name = "Fancy Health Bar"
-filename = "FancyHealthBar-1.20.1-1.2.2.jar"
+filename = "../mods/FancyHealthBar-1.20.1-1.2.2.jar"
 side = "client"
 
 [download]

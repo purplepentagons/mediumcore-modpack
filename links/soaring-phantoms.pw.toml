@@ -1,5 +1,5 @@
 name = "Soaring Phantoms"
-filename = "soaring-phantoms-1.0.0+1.20.jar"
+filename = "../mods/soaring-phantoms-1.0.0+1.20.jar"
 side = "both"
 
 [download]

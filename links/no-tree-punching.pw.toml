@@ -1,5 +1,5 @@
 name = "No Tree Punching"
-filename = "notreepunching-fabric-1.20-7.1.0.jar"
+filename = "../mods/notreepunching-fabric-1.20-7.1.0.jar"
 side = "both"
 
 [download]
