@@ -6,6 +6,7 @@ ServerEvents.recipes(event => {
         "minecraft:gold_ingot",
         "minecraft:copper_ingot",
         "minecraft:string",
+        "minecraft:torch"
     ].forEach((item) => {
         event.remove({
             output: item
@@ -58,9 +59,29 @@ ServerEvents.recipes(event => {
         {
             S: "#minecraft:stone_tool_materials",
             C: "minecraft:copper_block",
-            F: "minecraft:charcoal"
+            F: "#c:coal"
         }
     );
+
+    event.shaped(
+        Item.of("kubejs:unlit_torch", 4),
+        [
+            "C",
+            "S",
+        ],
+        {
+            S: "minecraft:stick",
+            C: "#c:coal"
+        }
+    );
+
+    event.shapeless(
+        Item.of("minecraft:torch"),
+        [
+            "1x #c:starts_fires",
+            "1x kubejs:unlit_torch"
+        ] 
+    ).damageIngredient("#c:starts_fires");
 
     event.shaped(
         Item.of("kubejs:copper_saw", 1),
@@ -113,4 +134,5 @@ ServerEvents.recipes(event => {
     event.campfireCooking('kubejs:copper_chunk', 'minecraft:raw_copper', 1, 1200);
     event.campfireCooking('minecraft:charcoal', '#minecraft:logs', 1, 2400);
     event.campfireCooking('minecraft:rabbit_hide', 'minecraft:rotten_flesh', 1, 1200);
+    event.campfireCooking('minecraft:torch', 'kubejs:unlit_torch', 1, 5);
 })
