@@ -638,6 +638,11 @@ hash = "d9d47dd8a6d74aa332302a4a551c1367726b7279787388b33f64710e6e62f2fc"
 metafile = true
 
 [[files]]
+file = "links/nosleeping.pw.toml"
+hash = "14f310cbac9b4a11a2931affcf92bdc62f9228f8e5507fcacd354bc2e695c22d"
+metafile = true
+
+[[files]]
 file = "links/nox-renoxed.pw.toml"
 hash = "e354b7bed5cdd185ee8c26e64866eba55b2a53b9313d7d5faa5897137a527238"
 metafile = true

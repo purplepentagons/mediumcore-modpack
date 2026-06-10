@@ -1,0 +1,13 @@
+name = "No More Sleeping"
+filename = "AntiSleepMod-1.0-SNAPSHOT.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/ddaaru5y/versions/Ckiah2FS/AntiSleepMod-1.0-SNAPSHOT.jar"
+hash-format = "sha512"
+hash = "96bf972cb12a97931e92817305a01b05d1fe9b4a0bbaaa388d66be43c7cbc37ae172a1f952e84a62b9868aeddaebee985bd17996282f8cbc05caacd8ee21e8bc"
+
+[update]
+[update.modrinth]
+mod-id = "ddaaru5y"
+version = "Ckiah2FS"
