@@ -9,6 +9,7 @@ ServerEvents.recipes(event => {
         "minecraft:torch",
         "minecraft:bookshelf",
         "minecraft:leather",
+        "minecraft:stonecutter",
 
         "minecraft:golden_helmet",
         "minecraft:golden_chestplate",
@@ -151,10 +152,10 @@ ServerEvents.recipes(event => {
     );
 
     event.smithing(
-      'kubejs:netherite_hammer',                     // arg 1: output
-      'minecraft:netherite_upgrade_smithing_template', // arg 2: the smithing template
-      'kubejs:diamond_hammer',                          // arg 3: the item to be upgraded
-      'minecraft:netherite_ingot'                            // arg 4: the upgrade item
+      'kubejs:netherite_hammer',
+      'minecraft:netherite_upgrade_smithing_template',
+      'kubejs:diamond_hammer',
+      'minecraft:netherite_ingot'
     )
 
     event.shapeless(
@@ -203,6 +204,23 @@ ServerEvents.recipes(event => {
             "2x minecraft:rabbit_hide"
         ]
     )
+
+    event.shaped(
+        Item.of("minecraft:stonecutter"),
+        [
+            "XIH",
+            "CRC",
+            "SSS"
+        ],
+        {
+            X: "#kubejs:hammers",
+            I: "minecraft:iron_ingot",
+            C: "minecraft:repeater",
+            R: "minecraft:redstone",
+            S: "minecraft:stone",
+            H: "minecraft:tripwire_hook"
+        }
+    ).damageIngredient("#kubejs:hammers",5)
 
     event.smelting("kubejs:iron_chunk", "minecraft:raw_iron");
     event.blasting("kubejs:iron_chunk", "minecraft:raw_iron");

@@ -46,4 +46,15 @@ ServerEvents.recipes(event => {
             }
         )
     })
+
+    shapedHammerRecipe(
+        Item.of("minecraft:shears"),
+        [
+            "IX",
+            " I"
+        ],
+        {
+            I: "minecraft:iron_ingot"
+        }
+    )
 })
