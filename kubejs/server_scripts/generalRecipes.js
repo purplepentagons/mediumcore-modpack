@@ -7,7 +7,21 @@ ServerEvents.recipes(event => {
         "minecraft:copper_ingot",
         "minecraft:string",
         "minecraft:torch",
-        "minecraft:bookshelf"
+        "minecraft:bookshelf",
+        "minecraft:leather",
+
+        "minecraft:golden_helmet",
+        "minecraft:golden_chestplate",
+        "minecraft:golden_leggings",
+        "minecraft:golden_boots",
+        "minecraft:golden_pickaxe",
+        "minecraft:golden_shovel",
+        "minecraft:golden_sword",
+        "minecraft:golden_hoe",
+        "minecraft:golden_axe",
+        "basicshields:golden_shield",
+        "notreepunching:gold_saw",
+        "notreepunching:gold_knife"
     ].forEach((item) => {
         event.remove({
             output: item
@@ -97,6 +111,52 @@ ServerEvents.recipes(event => {
         }
     );
 
+    event.shaped(
+        Item.of("kubejs:copper_hammer", 1),
+        [
+            "CCC",
+            "CCC",
+            " S "
+        ],
+        {
+            S: "minecraft:stick",
+            C: "minecraft:copper_ingot"
+        }
+    );
+
+    event.shaped(
+        Item.of("kubejs:iron_hammer", 1),
+        [
+            "CCC",
+            "CCC",
+            " S "
+        ],
+        {
+            S: "minecraft:stick",
+            C: "minecraft:iron_ingot"
+        }
+    );
+
+    event.shaped(
+        Item.of("kubejs:diamond_hammer", 1),
+        [
+            "CCC",
+            "CCC",
+            " S "
+        ],
+        {
+            S: "minecraft:stick",
+            C: "minecraft:diamond"
+        }
+    );
+
+    event.smithing(
+      'kubejs:netherite_hammer',                     // arg 1: output
+      'minecraft:netherite_upgrade_smithing_template', // arg 2: the smithing template
+      'kubejs:diamond_hammer',                          // arg 3: the item to be upgraded
+      'minecraft:netherite_ingot'                            // arg 4: the upgrade item
+    )
+
     event.shapeless(
         Item.of("minecraft:string", 1),
         [
@@ -135,6 +195,13 @@ ServerEvents.recipes(event => {
             B: "minecraft:book",
             S: "#minecraft:wooden_slabs"
         }
+    )
+
+    event.shapeless(
+        Item.of("minecraft:leather", 1),
+        [
+            "2x minecraft:rabbit_hide"
+        ]
     )
 
     event.smelting("kubejs:iron_chunk", "minecraft:raw_iron");

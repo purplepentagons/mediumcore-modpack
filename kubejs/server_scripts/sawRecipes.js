@@ -32,15 +32,7 @@ ServerEvents.recipes(event => {
         "black"
     ]
 
-    function shapedSawRecipe(item, pattern, key) {
-        let sawKey = key;
-        sawKey.X = "#notreepunching:saws";
-
-        event.remove({
-            output: item
-        });
-        event.shaped(item, pattern, sawKey).damageIngredient("#notreepunching:saws");
-    }
+    let shapedSawRecipe = global.shapedToolRecipe(event, "#notreepunching:saws");
 
     planksWoodList.forEach((wood) => {
         shapedSawRecipe(
