@@ -298,6 +298,40 @@ ServerEvents.recipes(event => {
             C: "minecraft:waxed_copper_block"
         }
     )
+
+    shapedSawRecipe(
+        Item.of("minecraft:bamboo_mosaic",1),
+        [
+            "SX",
+            "S "
+        ],
+        {
+            S: "minecraft:bamboo_slab"
+        }
+    )
+
+    shapedSawRecipe(
+        Item.of("minecraft:bamboo_mosaic_stairs",4),
+        [
+            "S X",
+            "SS ",
+            "SSS"
+        ],
+        {
+            S: "minecraft:bamboo_mosaic"
+        }
+    )
+
+    shapedSawRecipe(
+        Item.of("minecraft:bamboo_mosaic_slab",4),
+        [
+            "SSS",
+            " X "
+        ],
+        {
+            S: "minecraft:bamboo_mosaic"
+        }
+    )
     
     colors.forEach(color => {
         shapedSawRecipe(
