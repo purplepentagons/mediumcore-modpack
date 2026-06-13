@@ -468,6 +468,11 @@ hash = "8fa23c3032200e9375ce7026c4f61aa1fbb68e2f88c874fa4ab9d2a4aa875e18"
 metafile = true
 
 [[files]]
+file = "links/axes-are-weapons.pw.toml"
+hash = "5ad4f2314bd68e8d42d73d0f8653122ecbea165730ef0c219a73345b4c7dfd3f"
+metafile = true
+
+[[files]]
 file = "links/backport-copper-age.pw.toml"
 hash = "fbe2212f23810b48e421d9e608ab00365f11fbd12990f2c4801564ac2853e7ce"
 metafile = true
